@@ -22,3 +22,5 @@ production:
   database: <%= ENV['VALIDATOR_DB_NAME'] %>
   host: <%= ENV['VALIDATOR_DB_HOST'] %>
   port: <%= ENV['VALIDATOR_DB_PORT'] %>
+  sslverify: <%= ENV['VALIDATOR_DB_CA_CRT'] != nil %>
+  sslca: <%= ENV['VALIDATOR_DB_CA_CRT'] %>
