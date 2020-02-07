@@ -14,7 +14,7 @@ Rails.application.configure do
 
   config.assets.compile = false
 
-  config.log_level = :debug
+  config.log_level = :info
 
   config.log_tags = [:request_id]
 
