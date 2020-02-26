@@ -10,15 +10,15 @@ Permission.create!(role: admin_role,
 FederationAttribute.destroy_all
 
 core = Category.create!(
-  name: 'AAF Core Attributes',
-  description: 'AAF Core Attributes.',
+  name: 'Tuakiri Core Attributes',
+  description: 'Tuakiri Core Attributes.',
   enabled: true,
   order: 1
 )
 
 optional = Category.create!(
-  name: 'AAF Optional Attributes',
-  description: 'AAF Optional Attributes.',
+  name: 'Tuakiri Optional Attributes',
+  description: 'Tuakiri Optional Attributes.',
   enabled: true,
   order: 2
 )
@@ -122,7 +122,7 @@ FederationAttribute.create!(
   category_attributes: [
     CategoryAttribute.new(presence: true, category: core)
   ],
-  description: 'An individual\'s common name. For the AAF this is defined as
+  description: 'An individual\'s common name. For Tuakiri this is defined as
  the users first name followed by their surname.',
   notes_on_format: 'first name &lt;space&gt; surname',
   notes_on_usage: 'cn can be used by services for searching for a person, or
@@ -241,9 +241,10 @@ FederationAttribute.create!(
  obligations such as acknowledging the owners or reporting results in a
  particular way.
  <br /><br />
- There is a knowledge base <a href="http://support.aaf.edu.au/entries/21161973-S
-cripting-eduPersonAffiliation" target="_blank">article</a> available that
- explains how to write a Shibboleth IdP script to present attribute:',
+ Please see the Tuakiri IdP install manual section on <a href="https://tuakiri.a
+c.nz/confluence/display/Tuakiri/Installing+a+Shibboleth+3.x+IdP#InstallingaShibb
+oleth3.xIdP-Definescriptedattributes" target="_blank">scripted attributes</a>
+ that explains how to write a Shibboleth IdP script to present attribute:',
   notes_on_privacy: 'eduPersonAffiliation should be used when the service
  provider does not need confirmation of the security domain of the user.
  Service providers who do need the security domain information should ask for

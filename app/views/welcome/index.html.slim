@@ -1,7 +1,7 @@
 .alert
   h2 Attribute Validator
   p
-    | This service will validate the attributes provided about you from your identity provider ensuring they are provided in a format that is suitable for consumption by AAF connected services.
+    | This service will validate the attributes provided about you from your identity provider ensuring they are provided in a format that is suitable for consumption by Tuakiri connected services.
 
   br
   p
@@ -20,12 +20,10 @@
     strong
       ' this is the first time
     ' you've accessed this validator please ensure you've
-    => link_to 'configured automated attribute release', 'http://support.aaf.edu.au/entries/22545567-Automating-Attribute-Release'
+    => link_to 'configured automated attribute release', 'https://tuakiri.ac.nz/confluence/display/Tuakiri/Configuring+a+Shibboleth+Identity+Provider+to+join+the+Tuakiri+Federation#ConfiguringaShibbolethIdentityProvidertojointheTuakiriFederation-Configureattributerelease/filteringthroughthefederation'
     ' or correctly setup manual attribute release policies for your users before continuing to ensure you don't have connectivity problems with services such as this.
 
   p
-    | If you need further assistance you can
-    =<> link_to 'access the online AAF support desk', 'http://support.aaf.edu.au'
-    | or alternatively you can
-    =< mail_to 'support@aaf.edu.au', 'email AAF support'
+    | If you need further assistance please
+    =< mail_to 'tuakiri@reannz.co.nz', 'email Tuakiri support'
     | .
