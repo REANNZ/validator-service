@@ -1,4 +1,17 @@
 GIT
+  remote: git@github.com:REANNZ/aaf-lipstick.git
+  revision: 3241b7072f06f7dc5be0c975c9d9ea0af2b30675
+  specs:
+    aaf-lipstick (4.4.0)
+      erubis
+      kramdown (~> 1.5)
+      rails
+      rmagick
+      sprockets (~> 3.0)
+      tilt
+      will_paginate
+
+GIT
   remote: https://github.com/pdfkit/pdfkit
   revision: eca19322ae7d74d4a95d22062f6812dd1e5147f5
   ref: eca19322ae7d74d4a95d22062f6812dd1e5147f5
@@ -10,14 +23,6 @@ GEM
   specs:
     aaf-gumboot (2.5.0)
       accession
-    aaf-lipstick (4.4.0)
-      erubis
-      kramdown (~> 1.5)
-      rails
-      rmagick
-      sprockets (~> 3.0)
-      tilt
-      will_paginate
     aaf-secure_headers (3.0.0)
       activesupport
       secure_headers
@@ -399,7 +404,7 @@ PLATFORMS
 
 DEPENDENCIES
   aaf-gumboot
-  aaf-lipstick
+  aaf-lipstick!
   aaf-secure_headers
   accession
   bullet
