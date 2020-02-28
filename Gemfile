@@ -8,7 +8,7 @@ gem 'redis-rails'
 
 gem 'local_time'
 
-gem 'aaf-lipstick', :git => 'git@github.com:REANNZ/aaf-lipstick.git'
+gem 'aaf-lipstick', git: 'git@github.com:REANNZ/aaf-lipstick.git'
 gem 'aaf-secure_headers'
 gem 'accession'
 gem 'rmagick', '~> 2.16'
