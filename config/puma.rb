@@ -8,7 +8,7 @@ env = ENV.fetch('RAILS_ENV') { 'development' }
 
 preload_app!
 
-bind "tcp://#{ puma_config['host'] }:#{ puma_config['port'] }"
+bind "tcp://#{puma_config['host']}:#{puma_config['port']}"
 environment env
 workers 2
 threads 8, 32
