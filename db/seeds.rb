@@ -861,8 +861,8 @@ FederationAttribute.create!(
 )
 
 faas = %w[
-  homeOrganization
   schacHomeOrganization
+  homeOrganization
 ].map do |name|
   FederationAttributeAlias.create!(
     name: name
@@ -871,8 +871,8 @@ end
 
 FederationAttribute.create!(
   oid: 'oid:1.3.6.1.4.1.25178.1.2.9',
-  internal_alias: 'homeorganization',
-  http_header: 'HTTP_HOMEORGANIZATION',
+  internal_alias: 'schachomeorganization',
+  http_header: 'HTTP_SCHACHOMEORGANIZATION',
   federation_attribute_aliases: faas,
   primary_alias: faas.first,
   category_attributes: [
@@ -885,8 +885,8 @@ FederationAttribute.create!(
 )
 
 faas = %w[
-  homeOrganizationType
   schacHomeOrganizationType
+  homeOrganizationType
 ].map do |name|
   FederationAttributeAlias.create!(
     name: name
@@ -895,8 +895,8 @@ end
 
 FederationAttribute.create!(
   oid: 'oid:1.3.6.1.4.1.25178.1.2.10',
-  internal_alias: 'homeorganizationtype',
-  http_header: 'HTTP_HOMEORGANIZATIONTYPE',
+  internal_alias: 'schachomeorganizationtype',
+  http_header: 'HTTP_SCHACHOMEORGANIZATIONTYPE',
   federation_attribute_aliases: faas,
   primary_alias: faas.first,
   category_attributes: [
