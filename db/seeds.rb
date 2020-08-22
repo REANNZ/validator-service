@@ -734,16 +734,19 @@ FederationAttribute.create!(
   notes_on_privacy: ''
 )
 
-faa = FederationAttributeAlias.create!(
-  name: 'mobileNumber'
-)
+faas = %w[
+  mobile
+  mobileNumber
+].map do |name|
+  FederationAttributeAlias.create!(name: name)
+end
 
 FederationAttribute.create!(
   oid: 'oid:0.9.2342.19200300.100.1.41',
-  internal_alias: 'mobilenumber',
-  http_header: 'HTTP_MOBILENUMBER',
-  federation_attribute_aliases: [faa],
-  primary_alias: faa,
+  internal_alias: 'mobile',
+  http_header: 'HTTP_MOBILE',
+  federation_attribute_aliases: faas,
+  primary_alias: faas.first,
   category_attributes: [
     CategoryAttribute.new(presence: false, category: optional)
   ],
