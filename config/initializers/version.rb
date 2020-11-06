@@ -2,6 +2,6 @@
 
 module ValidatorService
   class Application
-    VERSION = '1.8.2-tuakiri1'
+    VERSION = '1.8.2-tuakiri2'
   end
 end
