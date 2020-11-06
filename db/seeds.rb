@@ -735,16 +735,19 @@ FederationAttribute.create!(
   notes_on_privacy: ''
 )
 
-faa = FederationAttributeAlias.create!(
-  name: 'mobileNumber'
-)
+faas = %w[
+  mobile
+  mobileNumber
+].map do |name|
+  FederationAttributeAlias.create!(name: name)
+end
 
 FederationAttribute.create!(
   oid: 'oid:0.9.2342.19200300.100.1.41',
-  internal_alias: 'mobilenumber',
-  http_header: 'HTTP_MOBILENUMBER',
-  federation_attribute_aliases: [faa],
-  primary_alias: faa,
+  internal_alias: 'mobile',
+  http_header: 'HTTP_MOBILE',
+  federation_attribute_aliases: faas,
+  primary_alias: faas.first,
   category_attributes: [
     CategoryAttribute.new(presence: false, category: optional)
   ],
@@ -862,8 +865,8 @@ FederationAttribute.create!(
 )
 
 faas = %w[
-  homeOrganization
   schacHomeOrganization
+  homeOrganization
 ].map do |name|
   FederationAttributeAlias.create!(
     name: name
@@ -872,8 +875,8 @@ end
 
 FederationAttribute.create!(
   oid: 'oid:1.3.6.1.4.1.25178.1.2.9',
-  internal_alias: 'homeorganization',
-  http_header: 'HTTP_HOMEORGANIZATION',
+  internal_alias: 'schachomeorganization',
+  http_header: 'HTTP_SCHACHOMEORGANIZATION',
   federation_attribute_aliases: faas,
   primary_alias: faas.first,
   category_attributes: [
@@ -886,8 +889,8 @@ FederationAttribute.create!(
 )
 
 faas = %w[
-  homeOrganizationType
   schacHomeOrganizationType
+  homeOrganizationType
 ].map do |name|
   FederationAttributeAlias.create!(
     name: name
@@ -896,8 +899,8 @@ end
 
 FederationAttribute.create!(
   oid: 'oid:1.3.6.1.4.1.25178.1.2.10',
-  internal_alias: 'homeorganizationtype',
-  http_header: 'HTTP_HOMEORGANIZATIONTYPE',
+  internal_alias: 'schachomeorganizationtype',
+  http_header: 'HTTP_SCHACHOMEORGANIZATIONTYPE',
   federation_attribute_aliases: faas,
   primary_alias: faas.first,
   category_attributes: [
@@ -921,7 +924,7 @@ end
 FederationAttribute.create!(
   oid: 'oid:2.5.4.11',
   internal_alias: 'organizationalunit',
-  http_header: 'HTTP_ORGANIZATIONALUNIT',
+  http_header: 'HTTP_OU',
   federation_attribute_aliases: faas,
   primary_alias: faas.first,
   category_attributes: [
