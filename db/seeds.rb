@@ -923,7 +923,7 @@ end
 FederationAttribute.create!(
   oid: 'oid:2.5.4.11',
   internal_alias: 'organizationalunit',
-  http_header: 'HTTP_ORGANIZATIONALUNIT',
+  http_header: 'HTTP_OU',
   federation_attribute_aliases: faas,
   primary_alias: faas.first,
   category_attributes: [
