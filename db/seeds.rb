@@ -902,6 +902,8 @@ FederationAttribute.create!(
   http_header: 'HTTP_SCHACHOMEORGANIZATIONTYPE',
   federation_attribute_aliases: faas,
   primary_alias: faas.first,
+  regexp: '\Aurn:schac:homeOrganizationType:.*\z',
+  regexp_triggers_failure: true,
   category_attributes: [
     CategoryAttribute.new(presence: false, category: optional)
   ],
