@@ -1,8 +1,8 @@
 GIT
   remote: git@github.com:REANNZ/aaf-lipstick.git
-  revision: a79b30dcf0160058ea361e3139f3449a55d0bb3d
+  revision: 46130c2b57789317e8b75197c01953ef7520c1b7
   specs:
-    aaf-lipstick (4.5.0)
+    aaf-lipstick (4.5.1)
       erubis
       kramdown
       rails
