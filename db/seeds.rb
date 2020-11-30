@@ -703,7 +703,7 @@ faa = FederationAttributeAlias.create!(
 FederationAttribute.create!(
   oid: 'oid:1.3.6.1.4.1.5923.1.1.1.5',
   internal_alias: 'edupersonprimaryaffiliation',
-  http_header: 'HTTP_EDUPERSONPRIMARYAFFILIATION',
+  http_header: 'HTTP_PRIMARY_AFFILIATION',
   federation_attribute_aliases: [faa],
   primary_alias_id: faa.id,
   category_attributes: [
