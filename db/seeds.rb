@@ -324,7 +324,7 @@ This attribute represents identity assurance profiles (IAPs), which are the set
  authentication method used in the transaction, and the eduPersonAssurance
  attribute can assert the level of assurance in the user’s identity.
  <br /><br />
- The <a href="http://wiki.aaf.edu.au/tech-info/levels-of-assurance">Levels of
+ The <a href="https://tuakiri.ac.nz/confluence/display/Tuakiri/Levels+of+Assurance">Levels of
  Assurance</a> section provides a standard vocabulary to express both of these
  concepts – the strength of assurance in the user’s identity and the strength
  of the method used to authenticate the user.',
